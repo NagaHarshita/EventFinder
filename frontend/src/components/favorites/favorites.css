@@ -1,0 +1,38 @@
+.fav{
+    margin: 0;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: white;
+    min-height: 1000px;
+}
+
+.fav_table{
+    width: 60%;
+    color: black;
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.fav_table tr {
+    border-bottom: 1px solid #858484;
+}
+  
+.empty-fav{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    border-radius: 10px;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+}
+
+.list{
+    color: aqua;
+    text-align: center;
+    padding: 5px;
+}

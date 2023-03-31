@@ -1,0 +1,61 @@
+.head{
+    color: aquamarine;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    justify-content: space-around;
+    background-color: rgb(59, 116, 97);
+    color: white;
+}
+
+.nav-link .active{
+    color: blue;
+}
+  
+.nav-item{
+    color: white;
+}
+
+.heart-icon-container {
+    margin-left: 5px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .heart-icon {
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  
+  .empty-heart {
+    color: black;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+  .filled-heart {
+    color: #f44336;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+
+.artist{
+  margin: auto;
+  width: 70%;
+  padding: 5px;
+}

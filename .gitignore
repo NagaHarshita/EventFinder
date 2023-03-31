@@ -1,0 +1,11 @@
+# Ignore everything in the frontend directory
+# frontend/*
+
+# Except for the .gitignore file
+!/frontend/.gitignore
+
+# Ignore everything in the backend directory
+# backend/*
+
+# Except for the .gitignore file
+!/backend/.gitignore

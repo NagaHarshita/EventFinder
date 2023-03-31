@@ -1,0 +1,68 @@
+.events {
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+
+table{
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 70%;
+    margin: auto;
+}
+
+tr, td, th{
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+tr{
+    font-weight: 400;
+}
+
+.odd {
+    background-color: rgb(19, 18, 18);
+}
+  
+
+.even {
+    background-color: rgb(47, 46, 46);
+}
+
+.Tabs{
+    background-color: rgba(66, 64, 64, 0.8);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.Tabs .back{
+    text-decoration: underline;
+    border: none;
+    background-color: rgba(66, 64, 64, 0.8);
+    color: white;
+    text-align: left;
+    align-self: left;
+}
+
+.empty-events{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    border-radius: 10px;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 10
+}

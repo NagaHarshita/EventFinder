@@ -1,0 +1,75 @@
+.custom-form {
+    background-color: rgba(211, 211, 211,0.3);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 40%;
+    margin: auto;
+    padding: 5px;
+}
+
+.custom-form{
+    padding: 20px;
+}
+
+.custom-form label {
+    color:#38ACEC;
+    font-size: 15px;
+    margin-bottom: 5px; 
+}
+
+.custom-form input[type="text"],
+.custom-form input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.custom-form button[type="submit"] {
+    margin-top: 20px;
+}
+
+.custom-form select{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+    padding: 8px;
+    font-size: medium;
+}
+
+.custom-form input{
+    border: 1px solid white;
+    color: black;
+    width: 100%;
+    border-radius: 5px;
+    /* display: block; */
+    padding: 10px;
+    font-size: 15px;   
+    background-color: white;
+}
+
+
+.custom-form input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+}
+
+.custom-form h1{
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.required-asterisk {
+    color: red;
+    margin-left: 5px;
+}
+  
