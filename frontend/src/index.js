@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
-const BACKENDURL = 'http://localhost:5001';
+const BACKENDURL = "https://event-finder-gysceua8u-nagaharshitas-projects.vercel.app/";
 
 export default BACKENDURL;
 
