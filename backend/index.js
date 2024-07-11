@@ -8,7 +8,13 @@ const app = express();
 
 var cors = require('cors')
 
-app.use(cors()) // Use this after the variable declaration
+app.use(cors(
+    {
+        origin: 'https://event-finder-jz0sybh0g-nagaharshitas-projects.vercel.app/',
+        methods: ['GET', 'POST'],
+        allowedHeaders: ['Content-Type', 'Authorization']
+    }
+)) // Use this after the variable declaration
           
 const port = 5001;      
 const ticketMasterApiKey = 'yjAHMBDybfi5pK84GUf4T9G9Q3dJq5Zs';
