@@ -16,17 +16,11 @@ app.use(cors(
     }
 )) // Use this after the variable declaration
           
-const port = 5001;      
-const ticketMasterApiKey = 'yjAHMBDybfi5pK84GUf4T9G9Q3dJq5Zs';
-
-
-
-const clientId = '4971fd960aa44708a3a695c035b0b5c8',
-  clientSecret = 'e9f090520b594ee4817ca6875b7aa0f0';
+const port = 5001;
 
 var spotifyApi = new SpotifyWebApi({
-    clientId: clientId,
-    clientSecret: clientSecret
+    clientId: process.env.SPOTIFY_CLIENTID,
+    clientSecret: process.env.SPOTIFY_CLIENTSECRET,
   });
 
 const getArtistImages = async(artistID) => {
@@ -79,7 +73,7 @@ const autoComplete = async(keyword) =>{
         const suggestApi = "https://app.ticketmaster.com/discovery/v2/suggest";
         const suggestion = await axios.get(suggestApi, {
             params:{
-                apikey: ticketMasterApiKey,
+                apikey: process.env.TICKETMASTER_APIKEY,
                 keyword: keyword
             }
         })
@@ -98,7 +92,7 @@ const getEvents = async(data) => {
         const eventApi = "https://app.ticketmaster.com/discovery/v2/events";
         const events = await axios.get(eventApi, {
             params:{
-                apikey: ticketMasterApiKey,
+                apikey: process.env.TICKETMASTER_APIKEY,
                 keyword: data.keyword,
                 segmentID: data.segmentID,
                 radius: data.radius,
@@ -117,7 +111,7 @@ const getEventDetails = async(event_id) => {
         const eventDetailApi = "https://app.ticketmaster.com/discovery/v2/events/" + event_id;
         const eventDetails = await axios.get(eventDetailApi, {
             params: {
-                apikey: ticketMasterApiKey
+                apikey: process.env.TICKETMASTER_APIKEY
             }
         })
         return eventDetails;
@@ -131,7 +125,7 @@ const getVenueDetails = async(venue_name) =>{
         const venueDetailApi = "https://app.ticketmaster.com/discovery/v2/venues/";
         const venueDetails = await axios.get(venueDetailApi, {
             params: {
-                apikey: ticketMasterApiKey,
+                apikey: process.env.TICKETMASTER_APIKEY,
                 keyword: venue_name
             }
         })
@@ -182,7 +176,7 @@ app.get('/autocomplete', async (req, res) => {
 app.get('/events', async(req, res)=>{
     const body = {};
     body['keyword'] = req.query.keyword;
-    body['segmentId'] = req.query.segmentID;
+    body['segmentId'] = req.query.segmentId;
     body['radius'] = req.query.radius;
     body['geoPoint'] = getGeoPoint(req.query.latitude, req.query.longitude);
 

@@ -1,6 +1,12 @@
 {
     "version": 2,
 
+    "env":{
+      "TICKETMASTER_APIKEY": "yjAHMBDybfi5pK84GUf4T9G9Q3dJq5Zs",
+      "SPOTIFY_CLIENTID": "4971fd960aa44708a3a695c035b0b5c8",
+      "SPOTIFY_CLIENTSECRET": "e9f090520b594ee4817ca6875b7aa0f0"
+    },
+
     "builds": [
       { "src": "*.js", "use": "@vercel/node" }
     ],
