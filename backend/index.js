@@ -8,13 +8,7 @@ const app = express();
 
 var cors = require('cors')
 
-app.use(cors(
-    {
-        origin: 'https://event-finder-nine.vercel.app/',
-        methods: ['GET', 'POST'],
-        allowedHeaders: ['Content-Type', 'Authorization']
-    }
-)) // Use this after the variable declaration
+app.use(cors()) // Use this after the variable declaration
           
 const port = 5001;
 
@@ -224,7 +218,9 @@ app.get('/twitter', )
 
 app.get('/facebook', )
 
-
+app.get('/', () => {
+    console.log("Event Finder"); 
+})
 
 app.listen(port, () => {
     console.log(`Now listening on port ${port}`); 
