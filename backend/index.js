@@ -10,7 +10,7 @@ var cors = require('cors')
 
 app.use(cors(
     {
-        origin: 'https://event-finder-jz0sybh0g-nagaharshitas-projects.vercel.app/',
+        origin: 'https://event-finder-nine.vercel.app/',
         methods: ['GET', 'POST'],
         allowedHeaders: ['Content-Type', 'Authorization']
     }
